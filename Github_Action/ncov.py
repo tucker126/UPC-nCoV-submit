@@ -34,6 +34,11 @@ result["date"]=time.strftime("%Y%m%d", time.localtime())
 result['created']=result1['created']
 result['id']=result1['id']
 
+# new 20220813
+result['geo_api_info']=result1['geo_api_info']
+result['address']=result1['address']
+result['area']=result1['area']
+
 with open(log_file,"a",encoding='utf8') as p :     
     jsObj = json.dumps(result)
     p.write("\n--------------------------\n")
