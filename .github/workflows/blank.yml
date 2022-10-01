@@ -27,10 +27,10 @@ jobs:
         dir
     
     # 搭建环境 pyhton
-    - name: Set up Python 3.9
+    - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:
-        python-version: 3.9
+        python-version: 3.7
 
     # 安装 requests
     - name : pip install requests
